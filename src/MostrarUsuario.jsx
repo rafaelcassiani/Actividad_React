@@ -4,16 +4,17 @@ import Formulario from './Formulario'
 import estado from './Formulario'
 
 function MostrarUsuario(props) {
-  const state = {estado}
-  return (
-    <div>
-    {/* {state.map((est) => {
-      return(
-        <p>Su nombre es {est.nombre} y su apellido es {est.apellido} </p>
-      )
-    })} */}
-    </div>
-  )
+  if(nombre != setnombre && apellido != setapellido){
+    return (
+        estado.map(estado=>(
+        <p>Su nombre es: {estado.nombre} Y su apellido es: {estado.apellido}</p>
+        ))
+    ) 
+}else{
+    return(
+        <p></p>
+    )
+}  
 }
 
 export default MostrarUsuario
